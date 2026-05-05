@@ -93,8 +93,8 @@ metadata:
     capabilities: Full Lifecycle
     categories: AI/Machine Learning, Big Data
     certified: "False"
-    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:bf758bbb3236261b4640d9d6bbbc87ea628fffb529dab64eac703cbd79a8b318"
-    createdAt: "2026-05-04T22:46:31Z"
+    containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:3a4225bc1de22ca0c523cefd6411ad6f3cbd7294254c84644f920e44892c8bd2"
+    createdAt: "2026-05-05T06:30:45Z"
     description: Operator for deployment and management of Red Hat OpenShift AI
     features.operators.openshift.io/cnf: "false"
     features.operators.openshift.io/cni: "false"
@@ -1853,7 +1853,7 @@ spec:
                 - name: RELATED_IMAGE_ODH_LLM_D_ROUTING_SIDECAR_IMAGE
                   value: "quay.io/opendatahub/llm-d-routing-sidecar@sha256:592014617aa530b49678469d2392255def32ff70370a003a457250de0865a22d"
                 - name: RELATED_IMAGE_ODH_WORKLOAD_VARIANT_AUTOSCALER_CONTROLLER_IMAGE
-                  value: "quay.io/opendatahub/workload-variant-autoscaler@sha256:a88777e693fac82e7c39ac537c92791bb16bc4fea577015c32f463ec3137e84d"
+                  value: "quay.io/opendatahub/workload-variant-autoscaler@sha256:f2e8300eafeae057c166a3dda732c98d8fdacc0b4b78578c27e3781919a9eed4"
                 - name: RELATED_IMAGE_ODH_KSERVE_AGENT_IMAGE
                   value: "quay.io/opendatahub/kserve-agent@sha256:eb4a5663c2f304cf1307426ac1f41ec817f064d8a676dd43f25b8937be0aec53"
                 - name: RELATED_IMAGE_ODH_KSERVE_CONTROLLER_IMAGE
@@ -2042,7 +2042,7 @@ spec:
                   value: registry.redhat.io/openshift4/ose-prom-label-proxy-rhel9@sha256:5522f37104f3fac57567fa2e9ec65601f60b8cea3603b12dcda26db8c481f404
                 - name: RELATED_IMAGE_ODH_PYTHON_312_IMAGE
                   value: registry.redhat.io/ubi9/python-312@sha256:0abad955c2c2e4575dc8987d76b8c49a7dd8e0679063e3118dab03c54528232f
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:bf758bbb3236261b4640d9d6bbbc87ea628fffb529dab64eac703cbd79a8b318"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:3a4225bc1de22ca0c523cefd6411ad6f3cbd7294254c84644f920e44892c8bd2"
                 imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
@@ -2091,7 +2091,7 @@ spec:
                 - -r
                 - /opt/manifests-template/.
                 - /opt/manifests/
-                image: "quay.io/opendatahub/opendatahub-operator@sha256:bf758bbb3236261b4640d9d6bbbc87ea628fffb529dab64eac703cbd79a8b318"
+                image: "quay.io/opendatahub/opendatahub-operator@sha256:3a4225bc1de22ca0c523cefd6411ad6f3cbd7294254c84644f920e44892c8bd2"
                 imagePullPolicy: Always
                 name: copy-manifests
                 resources:
@@ -2523,8 +2523,8 @@ spec:
     type: MutatingAdmissionWebhook
     webhookPath: /mutate-prometheus-monitors
   relatedImages:
-  - name: opendatahub-operator-bf758bbb3236261b4640d9d6bbbc87ea628fffb529dab64eac703cbd79a8b318-annotation
-    image: "quay.io/opendatahub/opendatahub-operator@sha256:bf758bbb3236261b4640d9d6bbbc87ea628fffb529dab64eac703cbd79a8b318"
+  - name: opendatahub-operator-3a4225bc1de22ca0c523cefd6411ad6f3cbd7294254c84644f920e44892c8bd2-annotation
+    image: "quay.io/opendatahub/opendatahub-operator@sha256:3a4225bc1de22ca0c523cefd6411ad6f3cbd7294254c84644f920e44892c8bd2"
   - name: odh_kf_notebook_controller_image
     image: "quay.io/opendatahub/kubeflow-notebook-controller@sha256:3b57f17ce1363d995d175820946ea7ac8a22f61bfa9055bb374542e97d664a13"
   - name: odh_dashboard_image
@@ -2574,7 +2574,7 @@ spec:
   - name: odh_llm_d_routing_sidecar_image
     image: "quay.io/opendatahub/llm-d-routing-sidecar@sha256:592014617aa530b49678469d2392255def32ff70370a003a457250de0865a22d"
   - name: odh_workload_variant_autoscaler_controller_image
-    image: "quay.io/opendatahub/workload-variant-autoscaler@sha256:a88777e693fac82e7c39ac537c92791bb16bc4fea577015c32f463ec3137e84d"
+    image: "quay.io/opendatahub/workload-variant-autoscaler@sha256:f2e8300eafeae057c166a3dda732c98d8fdacc0b4b78578c27e3781919a9eed4"
   - name: odh_kserve_agent_image
     image: "quay.io/opendatahub/kserve-agent@sha256:eb4a5663c2f304cf1307426ac1f41ec817f064d8a676dd43f25b8937be0aec53"
   - name: odh_kserve_controller_image
