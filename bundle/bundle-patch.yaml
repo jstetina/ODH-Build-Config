@@ -316,6 +316,15 @@ patch:
     - name: RELATED_IMAGE_ODH_TH06_CUDA130_TORCH210_PY312_IMAGE
       value: quay.io/opendatahub/odh-th06-cuda130-torch210-py312@sha256:3bb4eac145b368197d6000c1c91182664103d685a7bf495915a2b1f70e9ec07e
       component: odh-th06-cuda130-torch210-py312
+    - name: RELATED_IMAGE_ODH_EVAL_HUB_IMAGE
+      value: quay.io/opendatahub/odh-eval-hub@sha256:524aaf55a802a736fc9e0e5ad368177e8888426165a8e28fae0b8712eb7b1401
+      component: odh-eval-hub
+    - name: RELATED_IMAGE_ODH_TRUSTYAI_NEMO_GUARDRAILS_SERVER_IMAGE
+      value: quay.io/opendatahub/odh-trustyai-nemo-guardrails-server@sha256:221bf9278a93ab482d4678dea6b22010c5dafa757030c5f63d54bcd7e8946232
+      component: odh-trustyai-nemo-guardrails-serve
+    - name: RELATED_IMAGE_ODH_TRUSTYAI_GARAK_LLS_PROVIDER_DSP_IMAGE
+      value: quay.io/opendatahub/odh-trustyai-garak-lls-provider-dsp@sha256:a3c7c0a040f0447f0b228fb577912c7b704a2e634ad70dfd6f32c7091c2e7071
+      component: odh-trustyai-garak-lls-provider-dsp
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
