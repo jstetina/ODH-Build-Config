@@ -328,6 +328,9 @@ patch:
     - name: RELATED_IMAGE_ODH_OGX_K8S_OPERATOR_IMAGE
       value: quay.io/opendatahub/odh-ogx-k8s-operator@sha256:a649dc7e8035f579e93faf67fb7e0005fcf525951e067bbda9fc670355b32b13
       component: odh-ogx-k8s-operator
+    - name: RELATED_IMAGE_ODH_OGX_CORE_IMAGE
+      value: quay.io/opendatahub/odh-ogx-core@sha256:c88530cddc0de93b910a9f264a037cbc595947aa1b63ea5be0a07d4989ddf2de
+      component: odh-ogx-core
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
