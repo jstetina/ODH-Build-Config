@@ -11,7 +11,7 @@ name: odh-stable
 package: rhods-operator
 schema: olm.channel
 ---
-image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:521fec709adb31ec432d14567d5bdc7c976e3101c7961e57d30032a3b66b1c9d
+image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:4e7ca5e65d9a4229018574ae8392f956de968c3ba0cb81c8976822cac7bf0ac6
 name: rhods-operator.3.5.0-ea.1
 package: rhods-operator
 properties:
@@ -265,7 +265,7 @@ properties:
       categories: AI/Machine Learning, Big Data
       certified: "False"
       containerImage: quay.io/opendatahub/opendatahub-operator@sha256:5d25e9279f34e55cb3bbed0f02b274cab29e41095d07fd72c1989224c8a64288
-      createdAt: "2026-05-12T07:31:33Z"
+      createdAt: "2026-05-12T08:45:58Z"
       description: Operator for deployment and management of Red Hat OpenShift AI
       feast-cronjob-image: registry.redhat.io/openshift4/ose-cli@sha256:bc35a9fc663baf0d6493cc57e89e77a240a36c43cf38fb78d8e61d3b87cf5cc5
       features.operators.openshift.io/cnf: "false"
@@ -775,7 +775,7 @@ relatedImages:
   name: odh_workbench_jupyter_tensorflow_rocm_py312_image
 - image: quay.io/opendatahub/odh-workbench-jupyter-trustyai-cpu-py312-ubi9@sha256:b0eb007a25478bea8fb52512cfdf713b201d8e108462302cefe34aa559dc6f48
   name: odh_workbench_jupyter_trustyai_cpu_py312_image
-- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:521fec709adb31ec432d14567d5bdc7c976e3101c7961e57d30032a3b66b1c9d
+- image: quay.io/opendatahub/opendatahub-operator-bundle@sha256:4e7ca5e65d9a4229018574ae8392f956de968c3ba0cb81c8976822cac7bf0ac6
   name: ""
 - image: quay.io/opendatahub/opendatahub-operator@sha256:5d25e9279f34e55cb3bbed0f02b274cab29e41095d07fd72c1989224c8a64288
   name: opendatahub-operator-5d25e9279f34e55cb3bbed0f02b274cab29e41095d07fd72c1989224c8a64288-annotation
