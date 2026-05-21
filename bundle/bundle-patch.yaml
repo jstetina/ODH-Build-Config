@@ -328,6 +328,9 @@ patch:
     - name: RELATED_IMAGE_ODH_OBSERVABILITY_IMAGE
       value: quay.io/opendatahub/odh-observability@sha256:d0d930eb1bbbb27142018510f67043cacf6ec78af88c013fc46ba72f7f19b7aa
       component: odh-observability
+    - name: RELATED_IMAGE_ODH_AGENTS_OPERATOR_IMAGE
+      value: quay.io/opendatahub/odh-agents-operator@sha256:65f28a686005cd19047cd198c859d064677cc52a4d7c4774775a65ada85d9743
+      component: odh-agents-operator
   additional-related-images:
     file: additional-images-patch.yaml
   additional-fields:
