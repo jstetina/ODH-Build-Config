@@ -97,7 +97,7 @@ metadata:
     categories: AI/Machine Learning, Big Data
     certified: "False"
     containerImage: "quay.io/opendatahub/opendatahub-operator@sha256:bbd15ba88385af4e262bc78009ba372b018779bedb421401ce3d9a1ae89c272f"
-    createdAt: "2026-06-03T09:37:14Z"
+    createdAt: "2026-06-03T13:30:59Z"
     description: Operator for deployment and management of Red Hat OpenShift AI
     features.operators.openshift.io/cnf: "false"
     features.operators.openshift.io/cni: "false"
@@ -310,6 +310,9 @@ spec:
       displayName: OGX
       kind: OGX
       name: ogxs.components.platform.opendatahub.io
+      version: v1alpha1
+    - kind: Platform
+      name: platforms.config.opendatahub.io
       version: v1alpha1
     - description: Ray is the Schema for the rays API
       displayName: Ray
@@ -743,6 +746,28 @@ spec:
           - trustyais/finalizers
           - workbenches/finalizers
           verbs:
+          - update
+        - apiGroups:
+          - config.opendatahub.io
+          resources:
+          - platforms
+          verbs:
+          - get
+          - list
+          - watch
+        - apiGroups:
+          - config.opendatahub.io
+          resources:
+          - platforms/finalizers
+          verbs:
+          - update
+        - apiGroups:
+          - config.opendatahub.io
+          resources:
+          - platforms/status
+          verbs:
+          - get
+          - patch
           - update
         - apiGroups:
           - config.openshift.io
@@ -1823,6 +1848,8 @@ spec:
                       fieldPath: metadata.namespace
                 - name: DEFAULT_MANIFESTS_PATH
                   value: /opt/manifests
+                - name: DEFAULT_CHARTS_PATH
+                  value: /opt/charts
                 - name: RELATED_IMAGE_ODH_KF_NOTEBOOK_CONTROLLER_IMAGE
                   value: "quay.io/opendatahub/kubeflow-notebook-controller@sha256:c486815c554c60bbcc4a6ef7f5ca3a5d0cf6db17b678be3bd2821d6b7595670a"
                 - name: RELATED_IMAGE_ODH_DASHBOARD_IMAGE
