@@ -354,3 +354,6 @@ patch:
   additional-fields:
     file: csv-patch.yaml
 # edit this comment to simulate bundle-patch update.
+relatedImages:
+  - name: RELATED_IMAGE_ODH_TEST_COMP_ODH_IMAGE
+    value: quay.io/opendatahub/odh-test-comp-odh@sha256:6f3330befd4c6ddc3f5c49cf18ca7f6334c354f942562a7467339045038d3703
