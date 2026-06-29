@@ -357,3 +357,5 @@ patch:
 relatedImages:
   - name: RELATED_IMAGE_ODH_TEST_COMP_ODH_IMAGE
     value: quay.io/opendatahub/odh-test-comp-odh@sha256:6f3330befd4c6ddc3f5c49cf18ca7f6334c354f942562a7467339045038d3703
+  - name: RELATED_IMAGE_ODH_DASHBOARD_OPERATOR_IMAGE
+    value: quay.io/opendatahub/odh-dashboard-operator@sha256:3ff77c64ff542d5f74641632bb2af5534f36fb1f8ff3dfc386ef163594a68698
